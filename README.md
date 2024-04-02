@@ -1,9 +1,12 @@
 # MM Python CLI-Pipeline
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 A CLI tool for generating Django and FastAPI projects.
 
 ## Overview
-This is a python-cli tool for interactive project setup, following best practices for **Django** and **FastAPI**, along with CI/CD, linter and testing. In order to assure easier distribution, the project is deployed as **pypi** package.
+This is a python-cli tool for interactive project setup, following best practices for **Django** and **FastAPI**.
+In order to assure easier distribution, the project is deployed as **pypi** package.
+For optimal maintenance the project utilizes the **tox** framework.
 
 ## Installation
 TODO
@@ -17,7 +20,7 @@ TODO
 ## Features
 TODO
 
-### Framework
+### Frameworks
 - Django
 - FastAPI
 
@@ -25,6 +28,30 @@ TODO
 TODO
 
 ## Package Maintenance
+### Development
+- Prerequisites:
+
+  Install and activate `virtualenv` and install the `requirements_dev.txt`. **Make sure you use python3.11+**
+  ```bash
+  python -m venv venv
+  . venv/bin/activate
+  pip install -r requirements_dev.txt
+  ```
+
+- pre-commit setup
+  Install the `pre-commit` hooks
+  ```bash
+  pre-commit install
+  ```
+
+- git pre-push hook
+  Configure a pre-push hook that runs the unit tests before pushing to the repository
+  ```bash
+  echo -e '#!/bin/sh\n\ntox' >> .git/hooks/pre-push
+  chmod ug+x .git/hooks/pre-push
+  ```
+
+### Manual package update
 Prerequisites:
 
 - Install `build` and `twine` on root.
@@ -61,4 +88,4 @@ twine upload --repository testpypi dist/*
 ## License
 
 PYTHON-PROJECT-CLI is MIT licensed, as found in the
-[LICENSE](https://github.com/MentorMate/python-project-cli/LICENSE) file.
+[LICENSE](https://github.com/MentorMate/python-project-cli/blob/development/LICENSE) file.
