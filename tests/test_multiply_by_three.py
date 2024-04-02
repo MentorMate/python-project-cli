@@ -1,12 +1,5 @@
-import unittest
-from src.multiply.multiply_by_three import multiply_by_three
+from src.python_project_cli.multiply import multiply_by_three
 
 
-class TestMultiplyByThree(unittest.TestCase):
-
-	def test_multiply_by_three(self):
-		self.assertEqual(multiply_by_three(3), 9)
-
-
-if __name__ == "__main__":
-	unittest.main()
+def test_multiply_by_three():
+    assert multiply_by_three(3) == 9
