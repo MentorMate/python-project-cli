@@ -1,7 +1,7 @@
 # MM Python CLI-Pipeline
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
 A CLI tool for generating Django and FastAPI projects.
+
+![Tests](https://github.com/MentorMate/python-project-cli/actions/workflows/tests.yaml/badge.svg)
 
 ## Overview
 This is a python-cli tool for interactive project setup, following best practices for **Django** and **FastAPI**.
@@ -29,6 +29,8 @@ TODO
 
 ## Package Maintenance
 ### Development
+- Include new members in `CODEOWNERS`
+
 - Prerequisites:
 
   Install and activate `virtualenv` and install the `requirements_dev.txt`. **Make sure you use python3.11+**
