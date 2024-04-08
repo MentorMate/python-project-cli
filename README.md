@@ -2,6 +2,7 @@
 A CLI tool for generating Django and FastAPI projects.
 
 ![Tests](https://github.com/MentorMate/python-project-cli/actions/workflows/tests.yaml/badge.svg)
+![Deploy](https://github.com/MentorMate/python-project-cli/actions/workflows/deploy.yaml/badge.svg)
 
 ## Overview
 This is a python-cli tool for interactive project setup, following best practices for **Django** and **FastAPI**.
