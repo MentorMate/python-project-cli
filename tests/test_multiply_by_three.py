@@ -1,4 +1,4 @@
-from src.python_project_cli.multiply import multiply_by_three
+from src.python_project_cli.multiply.multiply_by_three import multiply_by_three
 
 
 def test_multiply_by_three():
