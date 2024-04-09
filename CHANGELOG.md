@@ -2,6 +2,17 @@
 
 
 
+## v0.1.0 (2024-04-09)
+
+### Feature
+
+* feat: Update package version ([`85c7339`](https://github.com/MentorMate/python-project-cli/commit/85c733992226d8698d264eeed91e7ad35033b8a7))
+
+### Unknown
+
+* Update package version ([`b230adc`](https://github.com/MentorMate/python-project-cli/commit/b230adce59c56464e4fbb5266a6e730774334dc4))
+
+
 ## v0.0.2 (2024-04-09)
 
 ### Fix
