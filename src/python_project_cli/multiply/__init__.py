@@ -1,1 +1,0 @@
-from src.python_project_cli.multiply.multiply_by_three import multiply_by_three  # noqa

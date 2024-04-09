@@ -1,4 +1,4 @@
-from src.python_project_cli.divide import divide_by_three
+from src.python_project_cli.divide.divide_by_three import divide_by_three
 
 
 def test_divide_by_three():
