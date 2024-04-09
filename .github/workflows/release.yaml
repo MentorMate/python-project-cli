@@ -48,27 +48,38 @@ jobs:
       id-token: write
       contents: write
 
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Python Semantic Release
+      uses: python-semantic-release/python-semantic-release@master
+      with:
+        github_token: ${{ secrets.ACCESS_TOKEN }}
+        token: ${{ secrets.ACCESS_TOKEN }}
+
     # environment:
     #   name: testpypi
     #   url: https://test.pypi.org/p/python-project-cli
 
-    steps:
-    - name: Download all the dists
-      uses: actions/download-artifact@v3
-      with:
-        name: python-package-distributions
-        path: dist/
-    - uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-        github_token: ${{ secrets.ACCESS_TOKEN }}
-        token: ${{ secrets.PAT }}
+    # steps:
+    # - name: Download all the dists
+    #   uses: actions/download-artifact@v3
+    #   with:
+    #     name: python-package-distributions
+    #     path: dist/
+    # - uses: actions/checkout@v4
+    #   with:
+    #     fetch-depth: 0
+    #     github_token: ${{ secrets.ACCESS_TOKEN }}
+    #     token: ${{ secrets.PAT }}
 
-    - name: Python Semantic Release
-      id: release
-      uses: python-semantic-release/python-semantic-release@v9.4.1
-      with:
-        github_token: ${{ secrets.ACCESS_TOKEN }}
+    # - name: Python Semantic Release
+    #   id: release
+    #   uses: python-semantic-release/python-semantic-release@v9.4.1
+    #   with:
+    #     github_token: ${{ secrets.ACCESS_TOKEN }}
         # <other options here>
 
     # - name: Publish package distributions to TestPyPI
