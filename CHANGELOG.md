@@ -2,6 +2,17 @@
 
 
 
+## v0.0.2 (2024-04-09)
+
+### Fix
+
+* fix: Remove invalid classifier ([`0600fee`](https://github.com/MentorMate/python-project-cli/commit/0600fee4f1108d0190d3b469d4516f1361177b47))
+
+### Unknown
+
+* Merge branch &#39;development&#39; of github.com:MentorMate/python-project-cli into development ([`50559ec`](https://github.com/MentorMate/python-project-cli/commit/50559ec0b159d3b5b43dee6f129b8240dddc1c63))
+
+
 ## v0.0.1 (2024-04-09)
 
 ### Fix
