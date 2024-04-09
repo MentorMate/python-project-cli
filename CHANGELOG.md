@@ -1,0 +1,91 @@
+# CHANGELOG
+
+
+
+## v0.0.1 (2024-04-09)
+
+### Fix
+
+* fix: Include explicit branch config for semantic release ([`4d6b324`](https://github.com/MentorMate/python-project-cli/commit/4d6b324ce86cb01437147113e37cbd2f42dbad9c))
+
+* fix: Uncomment the build step, because of missing dist/ ([`85247f9`](https://github.com/MentorMate/python-project-cli/commit/85247f9ecd0bd9927a66ce234ebd83ea582aec50))
+
+* fix: Include missing parameters for the &#39;Publish package&#39; step ([`6d020e4`](https://github.com/MentorMate/python-project-cli/commit/6d020e476ebf280e1c2b2f1991fe014fa94deee1))
+
+* fix: Include personal access token for the failing step in the publish workflow; Skip tests workflow ([`e173803`](https://github.com/MentorMate/python-project-cli/commit/e1738039c264e1e3d6cb60adcaecab10092debce))
+
+* fix: Fix missing version for the release step ([`9220338`](https://github.com/MentorMate/python-project-cli/commit/92203380d61084f5accddbcee74df690239fbc6c))
+
+### Unknown
+
+* Feature/poetry migration (#7)
+
+* docs: Include CHANGELOG.md
+
+* chore: Remove setup.cfg and setup.py
+
+* feat: Migrate to poetry; Exclude python v310 and 312 until v1.0.0
+
+* fix: Fix imports
+
+* feat: Edit the existing build+deploy configurations for gh actions to accommodated semantic-release; Remove requirements_dev.txt
+
+* fix: Fix gh actions tests workflow to properly call tox with poetry ([`7d362a7`](https://github.com/MentorMate/python-project-cli/commit/7d362a7759a0214ba4c8273edd9d4aa33099a0a5))
+
+* Feature/semantic release (#6)
+
+* feat: Include python-semantic-release with initial configurations for ci/cd package publishing
+
+* docs: Update README ([`294ca65`](https://github.com/MentorMate/python-project-cli/commit/294ca651c48bd74fcf166941ba69c5a38c1b4fa8))
+
+* Update package version ([`df2c891`](https://github.com/MentorMate/python-project-cli/commit/df2c8916648430491b2286f4061f6cb2a794ffbc))
+
+* Feature/ci cd pypi workflow (#5)
+
+* Add Dani in CODEOWNERS
+
+* Create new github workflow for test.pypi deployment ([`ee4bf1b`](https://github.com/MentorMate/python-project-cli/commit/ee4bf1b859d1d71aa0db954e4f63bbfb76c8d7da))
+
+* Feature/ci cd pipeline (#4)
+
+* Add github action workflow for running tests wtih tox
+
+* Create .github/CODEOWNERS file
+
+* Edit the gothub workflow tests to target only main and development branches; Update README.md ([`28225de`](https://github.com/MentorMate/python-project-cli/commit/28225dead92c9b6c6425b224eeda5b7b876dba80))
+
+* Feature/accommodate pre commit (#3)
+
+* Include .pre-commit-config.yaml
+
+* Update the README.md with setup isntallation for maintenance ([`7967b4e`](https://github.com/MentorMate/python-project-cli/commit/7967b4ec73cde29d27c43f3467341dbb257471b7))
+
+* Feature/accommodate tox (#2)
+
+* Create pytest based structure; Edit the existing code to be flake8 compliant
+
+* Add mypy and pytest options in the pyproject.toml
+
+* Add setup.py and setup.cfg files with flake8 and mypy options
+
+* Add tox.ini with base project configurations
+
+* Add requirements_dev and py.typed ([`de851a1`](https://github.com/MentorMate/python-project-cli/commit/de851a19d3de95605e2ad0478a89d833150eef16))
+
+* Feature/package structure (#1)
+
+* Create base package-based skeleton structure; Update README.md
+
+* Add .gitignore
+
+* Add simple files and tests
+
+* Replace setup.cfg with pyproject.toml
+
+* Update LICENSE; Fix wrong returt type for divide_by_three function
+
+* Change the test project file structure
+
+* Update README with info for project maintanence ([`91b5f98`](https://github.com/MentorMate/python-project-cli/commit/91b5f98405ae7d2aa4da889651d24ba429395061))
+
+* Add README.md to the project ([`faa0f9a`](https://github.com/MentorMate/python-project-cli/commit/faa0f9a21139937214aec72406acb358469e0b80))
