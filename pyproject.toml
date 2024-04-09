@@ -25,11 +25,12 @@ packages = [{ include = "python_project_cli", from = "src" }]
 
 [tool.semantic_release]
 version_toml = ["pyproject.toml:tool.poetry.version"]
-branch = "development"
 upload_to_pypi = true
-upload_to_release = true
 major_on_zero = true
 build_command = "pip install poetry && poetry build"
+
+[tool.semantic_release.branches.development]
+match = "development"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"
