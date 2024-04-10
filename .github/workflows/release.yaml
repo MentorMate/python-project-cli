@@ -80,17 +80,9 @@ jobs:
     #   with:
     #     github_token: ${{ secrets.ACCESS_TOKEN }}
         # <other options here>
-    - name: Check if dist/ folder exists (Release check)
-      run: |
-        if [ ! -d "dist" ]; then
-          echo "dist/ folder does not exist, skipping the job."
-          exit 78 # Exit code 78 is used for skipping jobs in GitHub Actions
-        else
-          echo "dist/ folder exists, proceeding with the job."
-        fi
 
     - name: Publish package to TestPyPI if new release available
-      if: always()
+      if: ${{ if [ ! -d "dist" ] }}
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         user: __token__
