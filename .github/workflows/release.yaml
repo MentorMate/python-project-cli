@@ -83,7 +83,7 @@ jobs:
 
     - name: Publish package to TestPyPI if new release available
       uses: pypa/gh-action-pypi-publish@release/v1
-      if: ${{ [ ! -d "dist" ] }}
+      if: ${{ hashFiles('dist/') != '' }}
       with:
         user: __token__
         password: ${{ secrets.TEST_PYPI_API_TOKEN }}
