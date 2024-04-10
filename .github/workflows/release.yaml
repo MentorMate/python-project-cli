@@ -8,11 +8,18 @@ on:
       - completed
 
 jobs:
+
   release:
     runs-on: ubuntu-latest
+    concurrency: release
+
     permissions:
       id-token: write
       contents: write
+
+    environment:
+      name: testpypi
+      url: https://test.pypi.org/p/python-project-cli
 
     steps:
     - uses: actions/checkout@v3
@@ -23,38 +30,6 @@ jobs:
       uses: python-semantic-release/python-semantic-release@master
       with:
         github_token: ${{ secrets.ACCESS_TOKEN }}
-
-    - name: Store the distribution packages
-      uses: actions/upload-artifact@v3
-      if: ${{ hashFiles('dist/') != '' }}
-      with:
-        name: python-package-distributions
-        path: dist/
-
-  publish:
-    runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: write
-
-    environment:
-      name: testpypi
-      url: https://test.pypi.org/p/python-project-cli
-
-    steps:
-    - name: Check if dist exists
-      uses: xSAVIKx/artifact-exists-action@v0
-      id: check_python_package
-      with:
-        name: python-package-distributions
-        path: dist/
-
-    - name: Download all the dists
-      if: steps.check_python_package.outputs.files_exists == 'true'
-      uses: actions/download-artifact@v3
-      with:
-        name: python-package-distributions
-        path: dist/
 
     - name: Publish package to TestPyPI if new release available
       uses: pypa/gh-action-pypi-publish@release/v1
