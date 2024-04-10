@@ -2,6 +2,29 @@
 
 
 
+## v0.4.1 (2024-04-10)
+
+### Ci
+
+* ci: Separate the release and publish jobs ([`893c27d`](https://github.com/MentorMate/python-project-cli/commit/893c27d30fb156ff6747d97109ac958d9d7fb569))
+
+* ci: Clean the commented code from the workflows; Uncomment the tests ([`fd55c50`](https://github.com/MentorMate/python-project-cli/commit/fd55c5093effe642cf5223066ea00798bb160244))
+
+### Documentation
+
+* docs: Update README.md with notes on how to use python-semantic-release and poetry ([`f5cb529`](https://github.com/MentorMate/python-project-cli/commit/f5cb52998b362eeebf4aeed607e3e6434bcac38c))
+
+### Fix
+
+* fix: Update the README title; Force patch release ([`6057a53`](https://github.com/MentorMate/python-project-cli/commit/6057a53454e47ca3159fa08aadfacbdc62b48e36))
+
+### Unknown
+
+* Revert &#34;ci: Separate the release and publish jobs&#34;
+
+This reverts commit 893c27d30fb156ff6747d97109ac958d9d7fb569. ([`c54435f`](https://github.com/MentorMate/python-project-cli/commit/c54435fcbd9e36e4775f6a99604d849abc2ad373))
+
+
 ## v0.4.0 (2024-04-10)
 
 ### Ci
