@@ -57,7 +57,6 @@ jobs:
       uses: python-semantic-release/python-semantic-release@master
       with:
         github_token: ${{ secrets.ACCESS_TOKEN }}
-        token: ${{ secrets.ACCESS_TOKEN }}
 
     # environment:
     #   name: testpypi
