@@ -1,4 +1,4 @@
-# MM Python CLI-Pipeline
+# MentorMate Python CLI
 A CLI tool for generating Django and FastAPI projects.
 
 ![Tests](https://github.com/MentorMate/python-project-cli/actions/workflows/tests.yaml/badge.svg)
