@@ -26,7 +26,6 @@ packages = [{ include = "python_project_cli", from = "src" }]
 [tool.semantic_release]
 version_toml = ["pyproject.toml:tool.poetry.version"]
 upload_to_pypi = true
-major_on_zero = true
 build_command = "pip install poetry && poetry build"
 
 [tool.semantic_release.branches.development]
