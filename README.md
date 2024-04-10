@@ -2,6 +2,7 @@
 A CLI tool for generating Django and FastAPI projects.
 
 ![Tests](https://github.com/MentorMate/python-project-cli/actions/workflows/tests.yaml/badge.svg)
+
 ![Deploy](https://github.com/MentorMate/python-project-cli/actions/workflows/release.yaml/badge.svg)
 
 ## Overview
@@ -29,32 +30,52 @@ TODO
 TODO
 
 ## Package Maintenance
+TODO: Move in a private repository and link it as subtree, once the project is open sourced
+
 ### Development
 - Include new members in `CODEOWNERS`
 
 - Prerequisites:
 
-  Install and activate `virtualenv` and install the `requirements_dev.txt`. **Make sure you use python3.11+**
+  Install `poetry`. **Make sure you have pip3/pipx installed**
   ```bash
-  python -m venv venv
-  . venv/bin/activate
-  pip install -r requirements_dev.txt
+  pipx install poetry
+  poentry install
   ```
 
 - pre-commit setup
   Install the `pre-commit` hooks
   ```bash
-  pre-commit install
+  poetry run pre-commit install
   ```
 
 - git pre-push hook
-  Configure a pre-push hook that runs the unit tests before pushing to the repository
+  Configure a pre-push hook that runs `tox` before pushing to the repository
   ```bash
-  echo -e '#!/bin/sh\n\ntox' >> .git/hooks/pre-push
+  echo -e '#!/bin/sh\n\npoetry run tox' >> .git/hooks/pre-push
   chmod ug+x .git/hooks/pre-push
   ```
 
-### Manual package update
+### Automatic package update
+In order to automate the release versioning we use `python-semantic-release`, which utilizes the [Angular Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/). That means that we need to adopt it in our commit messages.
+As a brief overview, the following types will:
+  - `BREAKING CHANGE:` **in the commit's footer** will bump to a new major version `1.0.0` -> `2.0.0`
+  - `feat:` will bump to a new minor version `1.0.0` -> `1.1.0`
+  - `fix:`, `perf:` will bump to a new patch version `1.0.0` -> `1.0.1`
+  - `ci:`, `docs:`, `tests:` etc. won't result in a new release, therefore won't be published in `pypi`
+
+Example on how to check if our commit will result in new release version, before we push:
+```bash
+$ git commit -m"feat: Create a new major feature"
+$ poetry run semantic-release -vv version --print
+...
+           INFO     [semantic_release.version.algorithm] INFO algorithm.tags_and_versions: found 6 previous tags                                                               algorithm.py:58
+No release will be made, 0.4.0 has already been released!
+...
+```
+Make sure you `git pull` after every release, because the `pyproject.toml` and `CHANGELOG.md` will be automatically updated by `semantic-release`.
+
+### Manual package update - not recommended!
 Prerequisites:
 
 - Install `build` and `twine` on root.
