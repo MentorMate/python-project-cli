@@ -2,6 +2,17 @@
 
 
 
+## v0.3.0 (2024-04-10)
+
+### Ci
+
+* ci: Test pypi publish with new setup ([`754c1d6`](https://github.com/MentorMate/python-project-cli/commit/754c1d657fad3b954d80e8c0cc3ff1ad1839d36b))
+
+### Feature
+
+* feat: Test deploy ([`a3b8dee`](https://github.com/MentorMate/python-project-cli/commit/a3b8dee786b55c9d41c54299484d2007b0e03a2e))
+
+
 ## v0.2.0 (2024-04-10)
 
 ### Feature
