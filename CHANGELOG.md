@@ -2,6 +2,23 @@
 
 
 
+## v0.4.0 (2024-04-10)
+
+### Ci
+
+* ci: Test skip publish package ([`e52f1a9`](https://github.com/MentorMate/python-project-cli/commit/e52f1a94aefe9437487f54c57727c2e3c9e91b78))
+
+* ci: Test skip publish package ([`b5b5132`](https://github.com/MentorMate/python-project-cli/commit/b5b51324724f9d8258cc9e68b8a6594babeca311))
+
+* ci: Test skip publish package ([`a70b741`](https://github.com/MentorMate/python-project-cli/commit/a70b7410a4eb4e03807f72fd9b6a07c68ebc2fe2))
+
+* ci: Test skip release job ([`4dee22e`](https://github.com/MentorMate/python-project-cli/commit/4dee22ec328b605ec7bf60ebc66120a2fe0462ff))
+
+### Feature
+
+* feat: Important feature added ([`133897b`](https://github.com/MentorMate/python-project-cli/commit/133897bd1942dbe498a4a45fc448ebfd50987557))
+
+
 ## v0.3.0 (2024-04-10)
 
 ### Ci
