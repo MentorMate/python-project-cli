@@ -2,6 +2,13 @@
 
 
 
+## v0.2.0 (2024-04-10)
+
+### Feature
+
+* feat: Add divide_by_two test feature ([`a3945a9`](https://github.com/MentorMate/python-project-cli/commit/a3945a9e5c58ebfc9584bbb9297a3b8d8ac5725a))
+
+
 ## v0.1.0 (2024-04-10)
 
 ### Ci
