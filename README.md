@@ -32,9 +32,12 @@ TODO
 ## Package Maintenance
 TODO: Move in a private repository and link it as subtree, once the project is open sourced
 
-### Development
-- Include new members in `CODEOWNERS`
+**Main points**
+1. In order to automate the release versioning we use `python-semantic-release`, which utilizes the [Angular Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/). That means that we need to adopt it in our commit messages (example below).
+2. Make sure you `git pull` after every release, because the `pyproject.toml` and `CHANGELOG.md` will be automatically updated by `semantic-release`.
+3. Include new members in `CODEOWNERS`
 
+### Development
 - Prerequisites:
 
   Install `poetry`. **Make sure you have pip3/pipx installed**
@@ -57,8 +60,7 @@ TODO: Move in a private repository and link it as subtree, once the project is o
   ```
 
 ### Automatic package update
-In order to automate the release versioning we use `python-semantic-release`, which utilizes the [Angular Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/). That means that we need to adopt it in our commit messages.
-As a brief overview, the following types will:
+As a brief overview of the main types for angular's conventional commits:
   - `BREAKING CHANGE:` **in the commit's footer** will bump to a new major version `1.0.0` -> `2.0.0`
   - `feat:` will bump to a new minor version `1.0.0` -> `1.1.0`
   - `fix:`, `perf:` will bump to a new patch version `1.0.0` -> `1.0.1`
@@ -73,7 +75,6 @@ $ poetry run semantic-release -vv version --print
 No release will be made, 0.4.0 has already been released!
 ...
 ```
-Make sure you `git pull` after every release, because the `pyproject.toml` and `CHANGELOG.md` will be automatically updated by `semantic-release`.
 
 ### Manual package update - not recommended!
 Prerequisites:
