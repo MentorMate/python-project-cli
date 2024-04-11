@@ -40,7 +40,7 @@ TODO: Move in a private repository and link it as subtree, once the project is o
   Install `poetry`. **Make sure you have pip3/pipx installed**
   ```bash
   pipx install poetry
-  poetry install
+  poentry install
   ```
 
 - pre-commit setup
