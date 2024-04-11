@@ -2,6 +2,29 @@
 
 
 
+## v0.5.0 (2024-04-11)
+
+### Feature
+
+* feat: Update README.md; Trigger new feature release after the project seetings changes ([`2908b72`](https://github.com/MentorMate/python-project-cli/commit/2908b723c04532e26fb4ba6595d9fc4ffa0e93c4))
+
+### Unknown
+
+* Merge pull request #10 from MentorMate/feature/exclude-squash-merging-docs
+
+feat: Update README.md; Trigger new feature release after the project… ([`60ea5ee`](https://github.com/MentorMate/python-project-cli/commit/60ea5eeb6939d5da9b8d7f1c96f13e486d183346))
+
+* Feature/integrate ruff (#8)
+
+* Include Georgi Peneve in codeowners
+
+* feat: include ruff and replace flake8
+
+* docs: Fix typo in README.md
+
+* chore: Include option to allow semant-release version check on a feature branch; Remove unnecessary comments ([`b598a9d`](https://github.com/MentorMate/python-project-cli/commit/b598a9de6c538e3c294927d4b25c168ab809dff1))
+
+
 ## v0.4.1 (2024-04-10)
 
 ### Ci
