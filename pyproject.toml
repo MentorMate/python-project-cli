@@ -31,6 +31,11 @@ build_command = "pip install poetry && poetry build"
 [tool.semantic_release.branches.development]
 match = "development"
 
+# for development purpose, in order to check for a new potential release
+# when using `semantic-release version`
+[tool.semantic_release.branches.feature]
+match = "feature/*"
+
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"
 ruff = "^0.3.5"
@@ -64,14 +69,14 @@ no_implicit_reexport = true
 line-length = 80
 lint.select = ["E4", "E7", "E9", "F", "B"]
 
-# 3. Avoid trying to fix flake8-bugbear (`B`) violations.
+# Avoid trying to fix flake8-bugbear (`B`) violations.
 lint.unfixable = ["B"]
 
-# 4. Ignore `E402` (import violations) in all `__init__.py` files, and in select subdirectories.
+# gnore `E402` (import violations) in all `__init__.py` files, and in select subdirectories.
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["E402"]
 "**/{tests,docs,tools}/*" = ["E402"]
 
 [tool.ruff.format]
-# 5. Use single quotes for non-triple-quoted strings.
+# Use single quotes for non-triple-quoted strings.
 quote-style = "single"
