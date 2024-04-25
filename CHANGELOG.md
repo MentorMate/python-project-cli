@@ -2,6 +2,41 @@
 
 
 
+## v0.6.0 (2024-04-25)
+
+### Chore
+
+* chore: Remove example pytest files ([`e008957`](https://github.com/MentorMate/python-project-cli/commit/e0089571e56411ddd962d71e58a52f37dc2f51a1))
+
+* chore: Add typer to poetry; Update poetry.lock ([`a4eece8`](https://github.com/MentorMate/python-project-cli/commit/a4eece88dadaebc8088243bd1b166b5ae3a5cb31))
+
+* chore: Update the pre-commit to call hooks from poetry ([`fb0a2ed`](https://github.com/MentorMate/python-project-cli/commit/fb0a2edec3886ab534723002b7608a7326e19bf6))
+
+### Feature
+
+* feat: Create typer cli commands: generate, version and status ([`5f503e7`](https://github.com/MentorMate/python-project-cli/commit/5f503e7cdc43d6a19a76f1f9504ae3b6a74bf63f))
+
+* feat: Add cookiecutter library ([`24424e9`](https://github.com/MentorMate/python-project-cli/commit/24424e9ce6bca582ccdf875b05360145ed1f8236))
+
+* feat: Add base typer example code; Separate the ruff check and format in the pre-commit yaml ([`71723e1`](https://github.com/MentorMate/python-project-cli/commit/71723e101421971df819bae7edb21882e3486c5d))
+
+### Fix
+
+* fix: Remove the mock project directories and files ([`e7b3d1c`](https://github.com/MentorMate/python-project-cli/commit/e7b3d1c5a43ebd5d3ba418361733ac01060b6589))
+
+### Test
+
+* test: Limit the test_status, because it&#39;s not passing in tox environemnt ([`13e39e4`](https://github.com/MentorMate/python-project-cli/commit/13e39e40547de3a0f9b1ad0ce37ce8150fae4d71))
+
+* test: Add unit tests for the new cli commands ([`702bacf`](https://github.com/MentorMate/python-project-cli/commit/702bacfb55eabae49e4e0ed68d148965f45607bd))
+
+### Unknown
+
+* Merge pull request #11 from MentorMate/feature/ebctn-489
+
+Feature/ebctn 489 ([`e831a4f`](https://github.com/MentorMate/python-project-cli/commit/e831a4f35b6c89ba92e04595393b853c6d80a212))
+
+
 ## v0.5.0 (2024-04-11)
 
 ### Feature
