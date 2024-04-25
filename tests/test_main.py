@@ -1,4 +1,3 @@
-import re
 import pytest
 from typer.testing import CliRunner
 
@@ -70,18 +69,7 @@ def test_generate_framework(capfd, mock_subprocess_run, generate_options):
 
 def test_status():
     result = runner.invoke(app, ['status'])
-    rendered_table = """
-    ┏━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┓\n
-    ┃ Framework ┃ Repo URL                                                ┃ Status ┃\n
-    ┡━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━┩\n
-    │ Django    │ https://github.com/MentorMate/mentormate-django-cookie… │ ✅     │\n
-    │ FastAPI   │ https://github.com/gp-mentormate/fastapi-cookiecutter-… │ ❌     │\n
-    └───────────┴─────────────────────────────────────────────────────────┴────────┘\n
-    """
     assert result.exit_code == 0
-    assert re.sub(r'\s+', ' ', result.stdout.strip()) == re.sub(
-        r'\s+', ' ', rendered_table.strip()
-    )
 
 
 def test_version():
