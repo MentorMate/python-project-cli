@@ -23,6 +23,9 @@ packages = [{ include = "python_project_cli", from = "src" }]
 [tool.poetry.urls]
 "Changelog" = "https://github.com/MentorMate/python-project-cli/blob/development/CHANGELOG.md"
 
+[tool.poetry.scripts]
+python-cli = "python_project_cli.main:app"
+
 [tool.semantic_release]
 version_toml = ["pyproject.toml:tool.poetry.version"]
 version_variables = [
