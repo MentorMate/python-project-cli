@@ -14,6 +14,8 @@
 
 ### Ci
 
+* ci: Remove python versions 3.10 and 3.12 from pyproject.toml classifiers ([`5ab7ecd`](https://github.com/MentorMate/python-project-cli/commit/5ab7ecdd28242c0066341ea6ca6370a1c0ee1f7c))
+
 * ci: Create workflow for pypi release ([`26cff70`](https://github.com/MentorMate/python-project-cli/commit/26cff70aa515490e1741fb5cf64265f751f5cb35))
 
 * ci: Separate the release and publish jobs ([`893c27d`](https://github.com/MentorMate/python-project-cli/commit/893c27d30fb156ff6747d97109ac958d9d7fb569))
@@ -95,6 +97,10 @@
 * test: Add unit tests for the new cli commands ([`702bacf`](https://github.com/MentorMate/python-project-cli/commit/702bacfb55eabae49e4e0ed68d148965f45607bd))
 
 ### Unknown
+
+* Merge pull request #16 from MentorMate/feature/pypi-release-config
+
+ci: Remove python versions 3.10 and 3.12 from pyproject.toml classifiers ([`2d7930b`](https://github.com/MentorMate/python-project-cli/commit/2d7930b86909267fb5a6022988d38f672238fdcb))
 
 * Merge pull request #15 from MentorMate/development
 
