@@ -26,8 +26,6 @@ We use `pip` for our package distribution, that's why we recomend that you use v
 - FastAPI
 
 ## Package Maintenance
-TODO: Move in a MM's Confluence and link it, once the page is finished
-
 **Main points**
 1. In order to automate the release versioning we use `python-semantic-release`, which utilizes the [Angular Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/). That means that we need to adopt it in our commit messages (example below).
 2. Make sure you `git pull` after every release, because the `pyproject.toml` and `CHANGELOG.md` will be automatically updated by `semantic-release`.
