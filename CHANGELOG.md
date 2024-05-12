@@ -2,6 +2,23 @@
 
 
 
+## v0.2.0 (2024-05-12)
+
+### Ci
+
+* ci: Remove repository-url ([`b3d6995`](https://github.com/MentorMate/python-project-cli/commit/b3d69955e1aec8af8548417fcd3fc8e3029f91dc))
+
+### Feature
+
+* feat: Trigger feature release ([`d973551`](https://github.com/MentorMate/python-project-cli/commit/d9735510980cb9f84a14be170e9ff1d80ee470fc))
+
+### Unknown
+
+* Merge pull request #17 from MentorMate/feature/pypi-release-config-2
+
+Feature/pypi release config 2 ([`8a31b47`](https://github.com/MentorMate/python-project-cli/commit/8a31b476604d46846840a65411a458a128f10ed9))
+
+
 ## v0.1.0 (2024-05-12)
 
 ### Chore
