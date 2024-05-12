@@ -21,7 +21,7 @@ classifiers = [
 packages = [{ include = "python_project_cli", from = "src" }]
 
 [tool.poetry.urls]
-"Changelog" = "https://github.com/MentorMate/python-project-cli/blob/development/CHANGELOG.md"
+"Changelog" = "https://github.com/MentorMate/python-project-cli/blob/main/CHANGELOG.md"
 
 [tool.poetry.scripts]
 python-cli = "python_project_cli.main:app"
@@ -36,6 +36,9 @@ build_command = "pip install poetry && poetry build"
 
 [tool.semantic_release.branches.development]
 match = "development"
+
+[tool.semantic_release.branches.main]
+match = "main"
 
 # for development purpose, in order to check for a new potential release
 # when using `semantic-release version`
