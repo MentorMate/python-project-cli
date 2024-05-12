@@ -97,7 +97,7 @@ version = "1.0.0"  #<--- new version here
 python3 -m build
 ```
 
-- Upload new version to pypi **TODO: update testpypi after v1.0.0**
+- Upload new version to pypi 
 ```bash
 twine upload --repository testpypi dist/*
 ```
