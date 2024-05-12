@@ -69,7 +69,3 @@ def status() -> None:
 @app.command(help='CLI version.')
 def version() -> None:
     print(f'[bold]CLI Version:[bold] {__version__}')
-
-
-if __name__ == '__main__':
-    app()

@@ -11,26 +11,22 @@ In order to assure easier distribution, the project is deployed as **pypi** pack
 For optimal maintenance the project utilizes the **tox** framework.
 
 ## Installation
-TODO
+We use `pip` for our package distribution, that's why we recomend that you use virtual environment for the package instalation (`venv` or `poetr`).
+```bash
+(env) pip install python-project-cli
+```
 
 ## Commands
-TODO
-
-### Flags
-TODO
-
-## Features
-TODO
+- `python-cli generate` - starts interactive project generation, that uses cookiecutter.
+- `python-cli status` - shows the framework repo status. We aim to update the main templates frequently, in order to keep up with the everevolving "best" practices, that's why there's a chance for a repo downtime.
+- `python-cli version` - project version.
 
 ### Frameworks
 - Django
 - FastAPI
 
-### Testing
-TODO
-
 ## Package Maintenance
-TODO: Move in a private repository and link it as subtree, once the project is open sourced
+TODO: Move in a MM's Confluence and link it, once the page is finished
 
 **Main points**
 1. In order to automate the release versioning we use `python-semantic-release`, which utilizes the [Angular Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/). That means that we need to adopt it in our commit messages (example below).
@@ -93,11 +89,9 @@ python -m pip pinstall --upgrade twine
 ```
 - Update project version in `pyproject.toml` -> `version`
 ```toml
-...
 [project]
 name = "python_project_cli"
-version = "1.0.0" <--- new version here
-...
+version = "1.0.0"  #<--- new version here
 ```
 
 - Build new .whl and .tar.gz
@@ -112,5 +106,5 @@ twine upload --repository testpypi dist/*
 
 ## License
 
-PYTHON-PROJECT-CLI is MIT licensed, as found in the
+PYTHON-PROJECT-CLI is unlicensed, as found in the
 [LICENSE](https://github.com/MentorMate/python-project-cli/blob/development/LICENSE) file.
