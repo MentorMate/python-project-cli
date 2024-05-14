@@ -2,6 +2,17 @@
 
 
 
+## v0.4.0 (2024-05-14)
+
+### Feature
+
+* feat: Fix semantic release 2 ([`2f69be2`](https://github.com/MentorMate/python-project-cli/commit/2f69be200da26055d1caac1cae32de571cde65d5))
+
+### Unknown
+
+* Merge branch &#39;main&#39; of github.com:MentorMate/python-project-cli ([`dbe4588`](https://github.com/MentorMate/python-project-cli/commit/dbe458801144a2cd7905be01e2b82930ff7c6405))
+
+
 ## v0.3.0 (2024-05-14)
 
 ### Feature
