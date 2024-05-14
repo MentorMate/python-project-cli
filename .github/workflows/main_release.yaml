@@ -34,6 +34,3 @@ jobs:
     - name: Publish package to PyPI if new release available
       uses: pypa/gh-action-pypi-publish@release/v1
       if: ${{ hashFiles('dist/') != '' }}
-      with:
-        user: __token__
-        password: ${{ secrets.PYPI_API_TOKEN }}
