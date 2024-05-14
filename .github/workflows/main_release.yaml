@@ -26,10 +26,10 @@ jobs:
       with:
         fetch-depth: 0
 
-    # - name: Check for new Relase and ...release
-    #   uses: python-semantic-release/python-semantic-release@master
-    #   with:
-    #     github_token: ${{ secrets.ACCESS_TOKEN }}
+    - name: Check for new Relase and ...release
+      uses: python-semantic-release/python-semantic-release@master
+      with:
+        github_token: ${{ secrets.ACCESS_TOKEN }}
 
     - name: Publish package to PyPI if new release available
       uses: pypa/gh-action-pypi-publish@release/v1
