@@ -2,6 +2,15 @@
 
 
 
+## v0.3.0 (2024-05-14)
+
+### Feature
+
+* feat: Uncomment semantic-release ([`68a6692`](https://github.com/MentorMate/python-project-cli/commit/68a669216032c49faad71061539638e682594cdb))
+
+* feat: Trigger release without automatic tag generation ([`97a40dc`](https://github.com/MentorMate/python-project-cli/commit/97a40dcd79f9974554b96c220bfd801deb163543))
+
+
 ## v0.2.0 (2024-05-14)
 
 ### Chore
