@@ -2,7 +2,7 @@ name: 🐍 + 📦 => PyPI
 
 on:
   workflow_run:
-    workflows: ["Tests"]
+    #    workflows: ["Tests"]
     branches: [main]
     types:
       - completed
