@@ -2,6 +2,23 @@
 
 
 
+## v0.2.0 (2024-05-14)
+
+### Chore
+
+* chore: Update poetry.lock ([`efa051c`](https://github.com/MentorMate/python-project-cli/commit/efa051c57a0aafe131684ee05c68048cdb82bc09))
+
+### Feature
+
+* feat: Test deploy from trusted publisher ([`d4f3619`](https://github.com/MentorMate/python-project-cli/commit/d4f36194f87a1db4f9f82f85a544d7ac621a9226))
+
+### Unknown
+
+* Merge pull request #18 from MentorMate/feature/pypi-release-config-3
+
+feat: Test deploy from trusted publisher ([`d7183c4`](https://github.com/MentorMate/python-project-cli/commit/d7183c4ac8542c47c7fe6ed428b712c9c9023ddd))
+
+
 ## v0.1.0 (2024-05-13)
 
 ### Chore
