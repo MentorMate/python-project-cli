@@ -1,6 +1,20 @@
 # CHANGELOG
 
 
+
+## v0.3.0 (2024-05-14)
+
+### Feature
+
+* feat: Fix semantic release ([`eefc51b`](https://github.com/MentorMate/python-project-cli/commit/eefc51b066278e74df63ca684f99c4265638dd46))
+
+* feat: Fix semantic release ([`94709af`](https://github.com/MentorMate/python-project-cli/commit/94709af513e449f8587c2ea004bd86b4cbad9ebf))
+
+* feat: Uncomment semantic-release ([`68a6692`](https://github.com/MentorMate/python-project-cli/commit/68a669216032c49faad71061539638e682594cdb))
+
+* feat: Trigger release without automatic tag generation ([`97a40dc`](https://github.com/MentorMate/python-project-cli/commit/97a40dcd79f9974554b96c220bfd801deb163543))
+
+
 ## v0.2.0 (2024-05-14)
 
 ### Chore
