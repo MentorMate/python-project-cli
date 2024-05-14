@@ -2,6 +2,13 @@
 
 
 
+## v0.5.0 (2024-05-14)
+
+### Feature
+
+* feat: Fix semantic release 3 ([`30d48fc`](https://github.com/MentorMate/python-project-cli/commit/30d48fc20fe9134e0962764c771667b389fdcb74))
+
+
 ## v0.4.0 (2024-05-14)
 
 ### Feature
