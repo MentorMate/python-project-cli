@@ -2,6 +2,15 @@
 
 
 
+## v1.0.0 (2024-05-15)
+
+### Breaking
+
+* feat: Create new deployment
+
+BREAKING CHANGE: Trigger new main release ([`a939906`](https://github.com/MentorMate/python-project-cli/commit/a939906aaf69008add7e39f87c05558d6d2adc2b))
+
+
 ## v0.1.0 (2024-05-15)
 
 ### Chore
