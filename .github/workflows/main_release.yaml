@@ -1,17 +1,13 @@
 name: 🐍 + 📦 => PyPI
 
 on:
-  # workflow_run:
-  #   workflows: ["Tests"]
-  #   branches: [main]
-  #   types:
-  #     - completed
-  push:
-    branches:
-      - "main"
+  workflow_run:
+    workflows: ["Tests"]
+    branches: [main]
+    types:
+      - completed
 
 jobs:
-
   release:
     runs-on: ubuntu-latest
     concurrency: release
@@ -21,7 +17,7 @@ jobs:
       contents: write
 
     environment:
-      name: pypi
+      name: pypi-release
       url: https://pypi.org/p/python-project-cli
 
     steps:
