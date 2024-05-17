@@ -10,24 +10,35 @@ This is a python-cli tool for interactive project setup, following best practice
 In order to assure easier distribution, the project is deployed as **pypi** package.
 For optimal maintenance the project utilizes the **tox** framework.
 
-## Installation
-We use `pip` for our package distribution, that's why we recomend that you use virtual environment for the package instalation (`venv` or `poetr`).
+# Installation
+We use `pip` for our package distribution, that's why we recommend that you use a virtual environment for the package installation (`venv` or `poetry`).
 ```bash
-(env) pip install python-project-cli
+pip install python-project-cli
 ```
 
 ## Commands
-- `python-cli generate` - starts interactive project generation, that uses cookiecutter.
-- `python-cli status` - shows the framework repo status. We aim to update the main templates frequently, in order to keep up with the everevolving "best" practices, that's why there's a chance for a repo downtime.
-- `python-cli version` - project version.
+1. **generate**s a new project in interactive mode, usesing `cookiecutter`.
+    ```bash
+    python-cli generate
+    ```
+
+2. Shows the framework repo **status**. We aim to update the main templates frequently, in order to keep up with the everevolving "best" practices, that's why there's a chance for a repo downtime.
+    ```bash
+    python-cli status
+    ```
+
+3. Project's **version**.
+    ```bash
+    python-cli version
+    ```
 
 ### Frameworks
 - Django
 - FastAPI
 
-
+### Project Maintenance (Internal)
+[Confluence link](https://mentormate.atlassian.net/wiki/spaces/MMSDLC/pages/4325900953/Python+CLI+documentation)
 
 ## License
-
 PYTHON-PROJECT-CLI is unlicensed, as found in the
 [LICENSE](https://github.com/MentorMate/python-project-cli/blob/development/LICENSE) file.
