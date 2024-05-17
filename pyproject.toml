@@ -32,9 +32,6 @@ version_variables = [
 upload_to_pypi = true
 build_command = "pip install poetry && poetry build"
 
-[tool.semantic_release.branches.development]
-match = "development"
-
 [tool.semantic_release.branches.main]
 match = "main"
 
