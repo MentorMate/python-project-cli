@@ -2,6 +2,27 @@
 
 
 
+## v1.1.0 (2024-05-17)
+
+### Ci
+
+* ci: Rename workflow main_release.yaml to release.yaml; Edit title ([`215179f`](https://github.com/MentorMate/python-project-cli/commit/215179f9a89a936ab8092dd562fa9dfd232e6ead))
+
+### Documentation
+
+* docs: Update docs; Fix typos; Include confluence link ([`f17044e`](https://github.com/MentorMate/python-project-cli/commit/f17044eb45759ff3276e42ede192150e313c3dd5))
+
+### Feature
+
+* feat: Remove development branch references ([`3084f9d`](https://github.com/MentorMate/python-project-cli/commit/3084f9d188491e60a6fdfc6711cadd77bc4f33f3))
+
+### Unknown
+
+* Merge pull request #20 from MentorMate/feature/ebctn-491
+
+Feature/ebctn 491 ([`5d0d997`](https://github.com/MentorMate/python-project-cli/commit/5d0d9972303df482a3eea50cd78f3036f81704c1))
+
+
 ## v1.0.0 (2024-05-15)
 
 ### Breaking
