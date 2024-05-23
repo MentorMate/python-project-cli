@@ -2,6 +2,27 @@
 
 
 
+## v1.2.0 (2024-05-23)
+
+### Chore
+
+* chore: Update poetry.lock ([`8850336`](https://github.com/MentorMate/python-project-cli/commit/8850336167653efec55dba2b53fcd3982e92dfd4))
+
+### Documentation
+
+* docs: Update README with link to the confluence page for project maitenance; Fix the link for the release badge ([`f0f9303`](https://github.com/MentorMate/python-project-cli/commit/f0f93038ec9d05bc4faa55ca1b9e71b9f1286cf9))
+
+### Feature
+
+* feat: Call --help by default if no command given; Update unit tests ([`ab75782`](https://github.com/MentorMate/python-project-cli/commit/ab75782e285f9a1cb994a7f863283c55a5f16918))
+
+### Unknown
+
+* Merge pull request #21 from MentorMate/feature/ebctn-492
+
+Feature/ebctn 492 ([`f67800b`](https://github.com/MentorMate/python-project-cli/commit/f67800b6a2fa647db696dcae7ba09ff6802712a9))
+
+
 ## v1.1.0 (2024-05-17)
 
 ### Ci

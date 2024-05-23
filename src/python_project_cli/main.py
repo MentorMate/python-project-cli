@@ -6,7 +6,7 @@ from rich import print
 import typer
 from typing_extensions import Annotated
 
-__version__ = '1.1.0'
+__version__ = '1.2.0'
 
 app = typer.Typer(add_completion=False, no_args_is_help=True)
 console = Console()
