@@ -3,7 +3,7 @@ A CLI tool for generating Django and FastAPI projects.
 
 ![Tests](https://github.com/MentorMate/python-project-cli/actions/workflows/tests.yaml/badge.svg)
 
-![Deploy](https://github.com/MentorMate/python-project-cli/actions/workflows/main_release.yaml/badge.svg)
+![Deploy](https://github.com/MentorMate/python-project-cli/actions/workflows/release.yaml/badge.svg)
 
 ## Overview
 This is a python-cli tool for interactive project setup, following best practices for **Django** and **FastAPI**.
@@ -37,7 +37,7 @@ pip install python-project-cli
 - FastAPI
 
 ### Project Maintenance (Internal)
-[Confluence link](https://mentormate.atlassian.net/wiki/spaces/MMSDLC/pages/4325900953/Python+CLI+documentation)
+[Confluence link](https://mentormate.atlassian.net/wiki/spaces/MMSDLC/pages/4325900953/Python+CLI+documentation#Package-Maintenance)
 
 ## License
 PYTHON-PROJECT-CLI is unlicensed, as found in the
