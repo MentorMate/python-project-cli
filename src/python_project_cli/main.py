@@ -8,7 +8,7 @@ from typing_extensions import Annotated
 
 __version__ = '1.1.0'
 
-app = typer.Typer(add_completion=False)
+app = typer.Typer(add_completion=False, no_args_is_help=True)
 console = Console()
 
 
@@ -61,7 +61,7 @@ def status() -> None:
     table.add_row(
         f'[bold]{Frameworks.fast_api}[bold]',
         f'[blue]{REPO_URLS[Frameworks.fast_api]}[blue]',
-        ':x:',
+        ':white_check_mark:',
     )
     console.print(table)
 
